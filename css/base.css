@@ -7,16 +7,17 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 body {
 	--color-text: #f1f1f1;
-    --color-bg: #0c0c0c;
-    --color-link: #1ab3de;
+    --color-bg: #ff9999;
+    --color-link: #fa2778;
     --color-link-hover: #f1f1f1;
-	--color-deco: #141414;
-	--color-side: #353535;
-	font-family: Futura, "futura-pt", sans-serif;
+	--color-deco: #fa2778;
+	--color-side: #fa2778;
+	font-family: Architects Daughter;
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
 	background-color: var(--color-bg);
+	-webkit-text-stroke: 0.1px rgb(46, 45, 45);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	padding-top: 10rem;
@@ -123,8 +124,8 @@ a:focus {
 }
 
 .codrops-header__title {
-	font-size: 1rem;
-	font-weight: normal;
+	font-size: 2.2rem;
+	font-weight: bolder;
 	line-height: 1;
 	margin: 0;
 }
@@ -257,6 +258,10 @@ a:focus {
 	position: absolute;
 	pointer-events: none;
 	transform: scale3d(1.01,1.01,1);
+	border:#ff78ac 8px solid;
+	
+	
+	
 }
 
 .js .slide__img-wrap, 
@@ -294,9 +299,19 @@ a:focus {
 	margin: 0 1rem 0 0;
 }
 
-.slide__title,
-.slide__subtitle,
+.slide__title{
+	color: #f1f1f1;
+	font-weight: bolder;
+	color: white; text-shadow: black 0.1em 0.1em 0.2em;
+}
+.slide__subtitle {
+	font-size: 1.5rem;
+	font-weight: bolder;
+	color: white; text-shadow: black 0.1em 0.1em 0.2em;
+	-webkit-text-stroke: 0.1px rgb(46, 45, 45);
+}
 .slide__side {
+	font-size: 1.25rem;
 	display: none;
 }
 
@@ -356,17 +371,17 @@ a:focus {
 
 .content__title {
 	margin: 0.5rem 0;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 .content__subtitle {
 	margin: 0 0 0.5rem;
-	font-size: 1rem;
+	font-size: 2rem;
 	font-weight: normal;
 }
 
 .content__text {
-	font-size: 0.85rem;
+	font-size: 2rem;
 }
 
 .js .content__title,
@@ -423,7 +438,7 @@ a:focus {
 		display: block;
 	}
 	.slide__title {
-		font-size: 3.25rem;
+		font-size: 3rem;
 		margin: 0 0 0.25rem;
 	}
 	.slide__subtitle {
@@ -445,7 +460,7 @@ a:focus {
 	}
 	.content__item {
 		padding: calc(10vh + 5rem) 0 7vh;
-		width: 50.5%;
+		width: 50.7%;
 		right: 7.5%;
 		overflow: visible;
 	}
@@ -455,22 +470,22 @@ a:focus {
 	}
 	.content__number {
 		position: absolute;
-		bottom: 7vh;
+		bottom: 4vh;
 		right: 0;
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 	.content__title {
-		font-size: 7vw;
+		font-size: 5vw;
 	}
 	.content__subtitle {
-		font-size: 1.15rem;
-		margin-bottom: 7.5vh;
+		font-size: 1.25rem;
+		margin-bottom: 5vh;
 	}
 	.content__text {
-		font-size: 0.95rem;
+		font-size: 1.1rem;
 		column-count: 2;
-		column-gap: 2rem;
-		max-width: 600px;
-		text-align: justify;
+		column-gap: 4rem;
+		max-width: 700px;
+		text-align: match-parent;
 	}
 }
